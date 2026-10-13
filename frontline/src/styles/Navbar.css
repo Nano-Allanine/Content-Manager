@@ -1,0 +1,61 @@
+@reference "../index.css";
+
+.nav-area {
+  @apply flex justify-between items-center gap-6 sticky p-8 top-0 z-10 bg-[#FFFFFF] dark:bg-[#141624];
+}
+
+.ham {
+  @apply text-2xl cursor-pointer hidden dark:text-white;
+}
+
+.list {
+  @apply flex items-center gap-10 justify-end flex-1;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+
+  .list {
+    @apply hidden;
+  }
+
+.nav-area {
+  @apply flex justify-between items-center gap-6 sticky p-8 top-0 z-10 bg-[#FFFFFF] dark:bg-[#141624];
+}
+
+.ham {
+  @apply text-2xl cursor-pointer hidden dark:text-white;
+}
+
+.list {
+  @apply flex items-center gap-10 justify-end flex-1;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+
+  .list {
+    @apply hidden;
+  }
+
+  .ham {
+    @apply flex items-center justify-center;
+  }
+
+  .mobile-list {
+    @apply relative top-full left-0 w-full flex flex-col items-center gap-6 p-6 bg-white dark:bg-[#141624] z-20;
+  }
+
+  .mobile-list li {
+    @apply list-none;
+  }
+}
+
+  .mobile-list {
+    @apply absolute top-full left-0 w-full flex flex-col items-center gap-6 p-6 bg-white dark:bg-[#141624] z-20;
+  }
+
+  .mobile-list li {
+    @apply list-none;
+  }
+}

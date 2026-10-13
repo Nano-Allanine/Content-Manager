@@ -1,0 +1,13 @@
+@reference "../index.css";
+
+.hero-section {
+  @apply relative flex justify-center items-center;
+}
+
+.image-container {
+  @apply w-280 h-90 overflow-hidden rounded-lg;
+}
+
+.girl {
+  @apply w-full h-full object-cover rounded-lg;
+}

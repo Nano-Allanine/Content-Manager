@@ -1,0 +1,21 @@
+@reference "../index.css";
+
+.responsivebar {
+  @apply relative;
+}
+
+.responsivebar-button {
+  @apply block md:hidden;
+}
+
+.responsivebar-menu {
+  @apply absolute right-0 top-full mt-2 w-64 rounded-xl border bg-background p-4 shadow-lg;
+}
+
+.responsivebar-nav {
+  @apply flex flex-col gap-4;
+}
+
+.responsivebar-link {
+  @apply transition-colors duration-200 hover:text-primary;
+}
